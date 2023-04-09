@@ -8,7 +8,59 @@ body {
 }
 h1 {
 	color: #D36B00;
+	text-align: center;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin: 10px;
+}
+footer {
+	margin-top: 80px;
+}
+footer p {
+	text-align: center;
+	font-size: 20px;
+}
+footer a {
+	color: black;
 }
 .container {
 	background-color: #F1F1F1;
+	width: 500px;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+	opacity: 0.9;
 }
+.container p {
+	font-size: 20px;
+}
+.container input,
+.container button {
+	font-size: 20px;
+	border-radius: 10px;
+} 
+.showTotalAmountToPay {
+	display: flex;
+}
+.billSplit,
+.totalTip, 
+.totalAmount {
+	margin: 10px;
+	background-color: #D36B00;
+	border-radius: 10px;
+	padding: 10px;
+}
+#tip {
+	display: none;
+}
+#addTip {
+	background-color: #4E9F3D;
+}
+#calculateBtn {
+	background-color: #FF0000;
+}
+
