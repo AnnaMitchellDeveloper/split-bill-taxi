@@ -63,4 +63,8 @@ footer a {
 #calculateBtn {
 	background-color: #FF0000;
 }
-
+@media all and (max-width:800px) {
+	.container {
+		width: 400px;
+	}
+}
