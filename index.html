@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <title>🚕 Let's split our taxi bill</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's split our taxi bill</h1>
+      <form>
+        <p>🚕 Bill for taxi</p>
+        <span
+          >💵
+          <input
+            id="billInput"
+            type="text"
+            placeholder="How much cost your trip?"
+          />
+        </span>
+        <p>🧑‍🤝‍🧑 Number of people</p>
+        <span>
+          <input
+            id="numberOfPeopleInput"
+            type="text"
+            placeholder="How many people?"
+          />
+        </span>
+        <p>💖 Did you like our service? 💖</p>
+        <button id="addTip">Add a tip!</button>
+		  <select id="tip">
+			<option disabled>Select an option</option>
+			<option value="0.30">Wow! 30%</option>
+			<option value="0.20">Good service! 20%</option>
+			<option value="0.10">It was ok! 10%</option>
+			<option value="0.00" selected>No tip!</option>
+		  </select>
+        <button>Calculate</button>
+      </form>
+		<div class="showTotalAmountToPay">
+			<div class="billSplit">
+				<p>Bill</p>
+				<span>💵</span>
+				<span id="dividedBill"></span>
+				<span>$ per person</span>
+			</div>
+			<div class="totalTip">
+				<p>Bill</p>
+				<span>💵</span>
+				<span id="dividedTip"></span>
+				<span>$ per person</span>
+			</div>
+			<div class="totalAmount">
+				<p>Bill</p>
+				<span>💵</span>
+				<span id="billAndTip"></span>
+				<span>$ per person</span>
+			</div>
+		</div>
+    </div>
+	 <footer>
+      <p>
+        Coded by Anna Mitchell and it is
+        <a
+          href="https://github.com/AnnaMitchellDeveloper/split-bill-hair-salon"
+          target="_blank"
+          >open-source</a
+        >.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

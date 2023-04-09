@@ -1,0 +1,14 @@
+body {
+	font-family: 'Tilt Neon', cursive;
+	background-image: url(bg-picture.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+h1 {
+	color: #D36B00;
+}
+.container {
+	background-color: #F1F1F1;
+}
